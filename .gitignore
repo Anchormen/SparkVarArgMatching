@@ -18,3 +18,5 @@ project/plugins/project/
 /bin/
 .classpath
 .project
+.cache-main
+.cache-test
