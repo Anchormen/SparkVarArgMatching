@@ -10,9 +10,7 @@ import org.apache.spark.SparkContext
  */
 class ExampleSparkDriver(sparkContext : SparkContext) {
   def drive() : Unit = {
-    val rdd1 = sparkContext.parallelize(1 to 10)
-		val rdd2 = sparkContext.parallelize(1 to 10)
-		val rdd3 = sparkContext.parallelize(1 to 10)
+    val rdd1, rdd2, rdd3 = sparkContext.parallelize(1 to 10)
 		
 		val unionRdd = sparkContext.union(rdd1, rdd2, rdd3)
   }
